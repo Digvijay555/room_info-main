@@ -18,7 +18,7 @@ const SwitchDetail = (props) => {
     newData[roomIdx].switchboards[switchIdx].appliances = appliances
     setData([...newData])
 
-  },[fans,light,heavy])
+  },[fans,light,heavy,switchIdx, roomIdx, data, setData])
   return (
     <div
       style={{
