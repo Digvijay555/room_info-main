@@ -1,4 +1,4 @@
-import { TextField, Button } from "@mui/material";
+import { TextField} from "@mui/material";
 import { useEffect, useState } from "react";
 const SwitchDetail = (props) => {
   const { switchIdx, roomIdx, data, setData } = props;
