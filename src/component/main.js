@@ -40,7 +40,7 @@ const Main = () => {
           onChange={(e) => {
             setRoomNumber(e.target.value);
           }}
-          
+
         />
         <TextField
           sx={{
@@ -94,7 +94,7 @@ const Main = () => {
 
             }}
           >
-            {data.map((idx) => {
+            {data.map((ele,idx) => {
               return <SwitchBoard idx={idx} data={data} setData={setData} />;
             })}
           </Box>
@@ -111,25 +111,7 @@ const Main = () => {
           </Button>
         </>
       ) : null
-        // <Button
-        //   variant="contained"
-        //   onClick={() => {
-
-        //     let newArray = [];
-        //     newArray[roomNumber - 1] = 2;
-        //     newArray.fill(2);
-        //     let newData = newArray.map((ele, idx) => {
-        //       return {
-        //         roomNumber: idx + 1,
-        //         switchboards: [],
-        //       };
-        //     });
-        //     setData(newData);
-        //     setIsSubmit(true);
-        //   }}
-        // >
-        //   Enter
-        // </Button>
+       
       }
     </div>
   );
